@@ -1,6 +1,6 @@
 # Site settings
 title: My portfolio
-#description: A blog about lorem ipsum
+description: My personal portfolio
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 url: "http://danielfeloiola.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
