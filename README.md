@@ -56,9 +56,14 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 
 - Install [NodeJS](https://nodejs.org/)
 - Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
+- Install [Yarn](https://yarnpkg.com/): `sudo npm install -g yarn`
 - Install dependencies: `yarn`
 - Run: `gulp`
+
+
+#gem install --user-install bundler jekyll
+#export PATH=/Users/Daniel/.gem/ruby/2.6.0/bin:$PATH
+
 
 ## Questions
 

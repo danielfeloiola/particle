@@ -1,13 +1,13 @@
 # Site settings
-title: My portfolio
-description: My personal portfolio
+title: Meu portfólio
+description: Meu portfólio pessoal
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 url: "http://danielfeloiola.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Hello! I'm Daniel
-user_description: I am a Digital Media and Communication researcher, working especially with data analysis and visualization to get insights from online platforms and social media. Here are some of my projects. Feel free to take a look around.
+username: Olá, sou o Daniel
+user_description: Sou um pesquisador de mídia e comunicação digital, trabalhando especialmente com análise e visualização de dados para obter insights de plataformas e mídias sociais, e aqui estão alguns dos meus projetos. Fique a vontade.
 email: danielfx19@gmail.com
 twitter_username: daniel-loiola
 github_username:  danielfeloiola
@@ -15,6 +15,6 @@ github_username:  danielfeloiola
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-141504073-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
