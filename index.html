@@ -1,3 +1,206 @@
----
-layout: default
----
+<!DOCTYPE html>
+
+<html>
+
+  <!-- head -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meu Portfólio</title>
+    <meta name="description" content="Meu portfólio pessoal">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+
+  <body>
+  <!-- Header -->
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <!-- Hello -->
+          <span lang="pt" class="site-title">Olá, sou o Daniel</span>
+          <span lang="en" style="display:none;" class="site-title">Hello! I'm Daniel</span>
+          <!-- Description -->
+          <span lang="pt" class="site-description">Sou um pesquisador de mídia e programador</span>
+          <span lang="en" style="display:none;" class="site-description">I'm a Media Researcher and Programmer</span>
+        </h1>
+        <!-- Icons -->
+        <div class="header-icons">
+          <a aria-label="Email" href="mailto:danielfx19@gmail.com"><i class="icon fa fa-envelope"></i></a>
+          <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/daniel-loiola/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+          <a aria-label="Github" target="_blank" href="https://github.com/danielfeloiola"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        </div>
+        <!-- Links -->
+        <div class="header-links">
+          <a class="link" style="cursor: pointer;" rel="alternate" onclick="Lang('pt')" hreflang="pt" id="ptSelector"><u>Português</u></a> /
+          <a class="link" style="cursor: pointer;" rel="alternate" onclick="Lang('en')" hreflang="en" id="enSelector">English</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- About me section -->
+    <section id="about">
+      <!-- Section header -->
+      <div class="user-details">
+        <h1 lang="pt"> Eperiência </h1>
+        <h1 lang="en" style="display:none;"> My Expertise </h1>
+        <p lang="pt"> Sou um pesquisador de mídia e comunicação digital, trabalhando especialmente com análise e visualização de dados para obter insights de plataformas e mídias sociais, e aqui estão alguns dos meus projetos. Fique a vontade. </p>
+        <p lang="en" style="display:none;"> I am a Digital Media and Communication researcher, working especially with data analysis and visualization to get insights from online platforms and social media. Here are some of my projects. Feel free to take a look around. </p>
+      </div>
+
+      <!-- Technologies -->
+      <div class="user">
+        <div class="tech">
+          <h2 lang="pt">Design</h2>
+          <h2 lang="en" style="display:none;">Design</h2>
+          <i class="devicon-html5-plain-wordmark"></i>
+          <i class="devicon-css3-plain-wordmark"></i>
+          <p lang="pt">HTML e CSS para criar sites e páginas web responsivas.</p>
+          <p lang="en" style="display:none;">HTML and CSS for creating responsive websites and pages.</p>
+        </div>
+        <div class="tech">
+          <h2 lang="pt">Código</h2>
+          <h2 lang="en" style="display:none;">Code</h2>
+          <i class="devicon-python-plain "></i>
+          <i class="devicon-heroku-original "></i>
+          <p lang="pt">Python e Heroku para criar e publicar aplicativos web.</p>
+          <p lang="en" style="display:none;">Python and Heroku for creating and publishing web apps.</p>
+        </div>
+        <div class="tech">
+          <h2 lang="pt">Ferramentas</h2>
+          <h2 lang="en" style="display:none;">Tools</h2>
+          <i class="devicon-git-plain"></i>
+          <i class="devicon-github-plain"></i>
+          <p lang="pt">Git e GitHub para controle de versões e colaboração.</p>
+          <p lang="en" style="display:none;">Git and GitHub for version control and online collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="user-details">
+        <h1 lang="pt"> Projetos </h1>
+        <h1 lang="en" style="display:none;"> Featured Projects </h1>
+      </div>
+
+      <!-- Selector -->
+      <div lang="pt" style="color:#000;text-decoration:none;font-size:25px;margin:10px;text-align: center;" >
+        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('pt')" id="ptSelector"><span>dataviz</span></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><u><span>web</span></u></a> &bull;
+        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><span>outros</span></a>
+      </div>
+      <div lang="en" style="display:none;color:#000;text-decoration:none;font-size:25px;margin:10px;text-align: center;" >
+        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('pt')" id="ptSelector"><span>dataviz</span></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><u><span>web</span></u></a> &bull;
+        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><span>others</span></a>
+      </div>
+
+      <!-- project: image on the left text on the right -->
+      <div class="user-projects">
+        <div class="images-right">
+          <img alt="youtube-data" src="assets/img/ytd.jpg" />
+        </div>
+        <div class="contents">
+          <!-- Project Name -->
+          <h3> Tube Plotter </h3>
+          <!-- Descriptions -->
+          <p lang="pt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p lang="en" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <!-- links -->
+          <a lang="pt" class="project-link" href="https://tube-plotter.herokuapp.com/">Visitar</a>
+          <a lang="en" style="display:none;"class="project-link" href="https://tube-plotter.herokuapp.com/">Check it out</a>
+        </div>
+      </div>
+
+      <!-- project: image on the right text on the left -->
+      <div class="user-projects">
+        <div class="images-left">
+          <img alt="map" src="assets/img/twitdata.jpg" />
+        </div>
+        <div class="contents-right">
+          <!-- Project Name -->
+          <h3> TwitData </h3>
+          <!-- Descriptions -->
+          <p lang="pt">TwitData é um simples aplicativo web que geolocaliza tweets em um mapa - permitindo buscas por usuário, hashtag ou trending topic. É uma maneira rápida de descobrir sobre o que estão falando em algum lugar, ou onde estão falando de algo.</p>
+          <p lang="en" style="display:none;">TwitData is a simple web application that geolocates tweets on a map - wether you search by user, hashtag or trending topics. It’s a simple and fast way to find out what user are talking about somewhere - or where they are talking about something.</p>
+          <!-- links -->
+          <a lang="pt" class="project-link" href="https://twit-data.herokuapp.com/">Visitar</a>
+          <a lang="en" style="display:none;"class="project-link" href="https://twit-data.herokuapp.com/">Check it out</a>
+        </div>
+      </div>
+
+      <!-- project: image on the left text on the right -->
+      <div class="user-projects">
+        <div class="images-right">
+          <img alt="youtube-data" src="assets/img/ytd.jpg" />
+        </div>
+        <div class="contents">
+          <!-- Project Name -->
+          <h3> YouTube Data </h3>
+          <!-- Descriptions -->
+          <p lang="pt">O YouTube Data é uma ferramenta web que faz simples coletas e visualizações de dados atravéas da API do YouTube, mostrando os videos mais recomendados para um tópico específico. Também possui uma função de análise de redes sem a necessidade de baixar os dados.</p>
+          <p lang="en" style="display:none;">YouTube Data is a web application to make simple data collections as visualizations via the YouTube API, showing what videos are more recommended for a specific search query. It also has a networks analisys function that don't require downloading the data.</p>
+          <!-- links -->
+          <a lang="pt" class="project-link" href="https://ytd-cloud.herokuapp.com/">Visitar</a>
+          <a lang="en" style="display:none;"class="project-link" href="https://youtubedataapp.herokuapp.com/">Check it out</a>
+        </div>
+      </div>
+
+      <!-- project: image on the right text on the left -->
+      <div class="user-projects">
+        <div class="images-left">
+          <img alt="puppy robot" src="assets/img/puppy.jpg" />
+        </div>
+        <div class="contents-right">
+          <!-- Project Name -->
+          <h3> Puppybot </h3>
+          <!-- Descriptions -->
+          <p lang="pt">O Puppybot é um robô que faz retweet de imagens de cahorrinhos. Ele faz o reconhecimento de imagens indevidas (como de gatos, por exemplo) utilizando inteligência artificial com TensorFlow e Keras. Foi desenvolvido utilizando Python.</p>
+          <p lang="en" style="display:none;"> Puppybot is a Twitter bot that retweets images of puppies! It can filter ugly images (like pictures of cats, for instance) using TensorFlow. It was developed using Python.</p>
+          <!-- Links -->
+          <a lang="pt" class="project-link" href="https://twitter.com/apuppybot/">Fazer carinho</a>
+          <a lang="en" style="display:none;"class="project-link" href="https://twitter.com/apuppybot/">Pet me!</a>
+        </div>
+      </div>
+
+
+      <!-- project: image on the left text on the right -->
+      <div class="user-projects">
+        <div class="images-right">
+          <img alt="youtube-data" src="assets/img/ytd.jpg" />
+        </div>
+        <div class="contents">
+          <!-- Project Name -->
+          <h3> Twit Viewer </h3>
+          <!-- Descriptions -->
+          <p lang="pt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p lang="en" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <!-- links -->
+          <a lang="pt" class="project-link" href="https://twit-viewer.herokuapp.com/">Visitar</a>
+          <a lang="en" style="display:none;"class="project-link" href="https://twit-viewer.herokuapp.com/">Check it out</a>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; Daniel Loiola</p>
+      <p>Build with Jekyll and <span class="love">❤</span> by Nathan Randecker</p>
+    </footer>
+
+  </body>
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="assets/js/sweet-scroll.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/lang.js"></script>
+
+
+</html>
