@@ -84,41 +84,45 @@
       <div class="user-details">
         <h1 lang="pt"> Projetos </h1>
         <h1 lang="en" style="display:none;"> Featured Projects </h1>
+
+        <p lang="pt"> Aqui estão alguns dos meus projetos. Escolha uma categoria para ver mais.</p>
+        <p lang="en" style="display:none;"> Here are some of my projects. Choose a category to take a look. </p>
+
       </div>
 
       <!-- Selector -->
       <div lang="pt" style="color:#000;text-decoration:none;font-size:25px;margin:10px;text-align: center;" >
-        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('pt')" id="ptSelector"><span>dataviz</span></a> &bull;
-        <a class="link" style="cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><u><span>web</span></u></a> &bull;
-        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><span>outros</span></a>
+        <a class="link" style="color:#999;cursor: pointer;" onclick="pSelect('dataviz')" id="datavizSelector"><span>dataviz</span></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="pSelect('web')" id="webSelector"><u><span>web</span></u></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="pSelect('other')" id="otherSelector"><span>outros</span></a>
       </div>
       <div lang="en" style="display:none;color:#000;text-decoration:none;font-size:25px;margin:10px;text-align: center;" >
-        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('pt')" id="ptSelector"><span>dataviz</span></a> &bull;
-        <a class="link" style="cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><u><span>web</span></u></a> &bull;
-        <a class="link" style="color:#999;cursor: pointer;" onclick="PortSelect('en')" id="enSelector"><span>others</span></a>
+        <a class="link" style="color:#999;cursor: pointer;" onclick="pSelectEn('dataviz')" id="datavizSelectorEn"><span>dataviz</span></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="pSelectEn('web')" id="webSelectorEn"><u><span>web</span></u></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="pSelectEn('other')" id="otherSelectorEn"><span>others</span></a>
       </div>
 
-      <!-- project: image on the left text on the right -->
-      <div class="user-projects">
+      <!-- project: image on the right text on the left -->
+      <div class="user-projects" type="web">
         <div class="images-right">
-          <img alt="youtube-data" src="assets/img/ytd.jpg" />
+          <img alt="tube plotter" src="assets/img/ytd.jpg" />
         </div>
         <div class="contents">
           <!-- Project Name -->
           <h3> Tube Plotter </h3>
           <!-- Descriptions -->
-          <p lang="pt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p lang="en" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p lang="pt">Uma simples aplicação que plota thumbnails do YouTube em um grafo extraído do video network do YouTube Data Tools e espacializado no Gephi. Permite navegar pelo grafo usando as thumbnails de cada vídeo como nó.</p>
+          <p lang="en" style="display:none;">A simple web application that plots YouTube thumbnails on a graph extracted from YouTube Data Tools Video Network module and spacialized on Gephi. Allows you to visualize the graph with the thumbnails for nodes.</p>
           <!-- links -->
           <a lang="pt" class="project-link" href="https://tube-plotter.herokuapp.com/">Visitar</a>
           <a lang="en" style="display:none;"class="project-link" href="https://tube-plotter.herokuapp.com/">Check it out</a>
         </div>
       </div>
 
-      <!-- project: image on the right text on the left -->
-      <div class="user-projects">
+      <!-- project: image on the left text on the right -->
+      <div class="user-projects" type="web">
         <div class="images-left">
-          <img alt="map" src="assets/img/twitdata.jpg" />
+          <img alt="twit-data-map" src="assets/img/twitdata.jpg" />
         </div>
         <div class="contents-right">
           <!-- Project Name -->
@@ -132,8 +136,8 @@
         </div>
       </div>
 
-      <!-- project: image on the left text on the right -->
-      <div class="user-projects">
+      <!-- project: image on the right text on the left -->
+      <div class="user-projects" type="web">
         <div class="images-right">
           <img alt="youtube-data" src="assets/img/ytd.jpg" />
         </div>
@@ -149,40 +153,57 @@
         </div>
       </div>
 
-      <!-- project: image on the right text on the left -->
-      <div class="user-projects">
+
+      <!-- project: image on the left text on the right -->
+      <div class="user-projects" type="web">
         <div class="images-left">
-          <img alt="puppy robot" src="assets/img/puppy.jpg" />
+          <img alt="twit-viewer" src="assets/img/twitview.jpg" />
         </div>
         <div class="contents-right">
           <!-- Project Name -->
-          <h3> Puppybot </h3>
-          <!-- Descriptions -->
-          <p lang="pt">O Puppybot é um robô que faz retweet de imagens de cahorrinhos. Ele faz o reconhecimento de imagens indevidas (como de gatos, por exemplo) utilizando inteligência artificial com TensorFlow e Keras. Foi desenvolvido utilizando Python.</p>
-          <p lang="en" style="display:none;"> Puppybot is a Twitter bot that retweets images of puppies! It can filter ugly images (like pictures of cats, for instance) using TensorFlow. It was developed using Python.</p>
-          <!-- Links -->
-          <a lang="pt" class="project-link" href="https://twitter.com/apuppybot/">Fazer carinho</a>
-          <a lang="en" style="display:none;"class="project-link" href="https://twitter.com/apuppybot/">Pet me!</a>
-        </div>
-      </div>
-
-
-      <!-- project: image on the left text on the right -->
-      <div class="user-projects">
-        <div class="images-right">
-          <img alt="youtube-data" src="assets/img/ytd.jpg" />
-        </div>
-        <div class="contents">
-          <!-- Project Name -->
           <h3> Twit Viewer </h3>
           <!-- Descriptions -->
-          <p lang="pt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p lang="en" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p lang="pt">Uma simples ferramenta que permite encontrar rapidamente um tweet usando apenas o nome do usuário e o id do tweet. Pode ser usado para visualizar conteúdo coletados através de ferramentas como o DMI-TCAT ou TAGS.</p>
+          <p lang="en" style="display:none;">A simple tool that allows the user to quickly find a tweet using only the username and the tweet id. Can be used to visualize content (like images and videos) collected through tools like TAGS or TCAT.</p>
           <!-- links -->
           <a lang="pt" class="project-link" href="https://twit-viewer.herokuapp.com/">Visitar</a>
           <a lang="en" style="display:none;"class="project-link" href="https://twit-viewer.herokuapp.com/">Check it out</a>
         </div>
       </div>
+
+       <!-- project: image on the right text on the left -->
+       <div class="user-projects" type="others" style="display:none;">
+         <div class="images-right">
+           <img alt="puppy robot" src="assets/img/puppy.jpg" />
+         </div>
+         <div class="contents">
+           <!-- Project Name -->
+           <h3> Puppybot </h3>
+           <!-- Descriptions -->
+           <p lang="pt">O Puppybot é um robô que retuita imagens de cahorrinhos. Ele faz o reconhecimento de imagens indevidas (como de gatos, por exemplo) utilizando inteligência artificial com TensorFlow e Keras. Foi desenvolvido utilizando Python.</p>
+           <p lang="en" style="display:none;"> Puppybot is a Twitter bot that retweets images of puppies! It can filter ugly images (like pictures of cats, for instance) using TensorFlow and Keras. It was developed using Python.</p>
+           <!-- Links -->
+           <a lang="pt" class="project-link" href="https://twitter.com/apuppybot/">Fazer carinho</a>
+           <a lang="en" style="display:none;"class="project-link" href="https://twitter.com/apuppybot/">Pet me!</a>
+         </div>
+       </div>
+
+       <!-- project: image on the left text on the right -->
+       <div class="user-projects" type="others" style="display:none;">
+         <div class="images-left">
+           <img alt="pinocchos pizza" src="assets/img/pinocchios.jpg" />
+         </div>
+         <div class="contents-right">
+           <!-- Project Name -->
+           <h3> CS50W Pizza </h3>
+           <!-- Descriptions -->
+           <p lang="pt">Site para a Pinocchio’s Pizza, um restaurante italiano em Cambridge, MA. Conta com recursos de e-commerce como carrinho de compras, e também permite aos administradores fazer atualizações no menu via um painel. Criado com Python e Django.</p>
+           <p lang="en" style="display:none;">Website for Pinocchio’s Pizza, an italian restaurant in Cambridge, MA. Has typical e-commerce features like shopping carts, and also allows the admins to make changes to the menu via a panel. Built using Python and Django.</p>
+           <!-- Links -->
+           <a lang="pt" class="project-link" href="https://fast-mountain-47414.herokuapp.com/">Visitar</a>
+           <a lang="en" style="display:none;"class="project-link" href="https://fast-mountain-47414.herokuapp.com/">Yummy!</a>
+         </div>
+       </div>
 
     </section>
 
@@ -201,6 +222,8 @@
 <script src="assets/js/sweet-scroll.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/lang.js"></script>
+<script src="assets/js/selector.js"></script>
+
 
 
 </html>

@@ -15,7 +15,7 @@ function Lang(language) {
             el.style.display = "none";
         })
         en.forEach(el=>{
-            el.style.display = "block";
+            el.style.display = "";
         })
 
     }
@@ -35,7 +35,7 @@ function Lang(language) {
             el.style.display = "none";
         })
         pt.forEach(el=>{
-            el.style.display = "block";
+            el.style.display = "";
         })
 
     }
