@@ -92,16 +92,18 @@
 
       <!-- Selector -->
       <div lang="pt" style="color:#000;text-decoration:none;font-size:25px;margin:10px;text-align: center;" >
-        <a class="link" style="color:#999;cursor: pointer;" onclick="pSelect('dataviz')" id="datavizSelector"><span>dataviz</span></a> &bull;
+        <a class="link" style="color:#999;cursor: pointer;" onclick="pSelect-('dataviz')" id="datavizSelector"><span>dataviz</span></a> &bull;
         <a class="link" style="cursor: pointer;" onclick="pSelect('web')" id="webSelector"><u><span>web</span></u></a> &bull;
         <a class="link" style="cursor: pointer;" onclick="pSelect('other')" id="otherSelector"><span>outros</span></a>
       </div>
       <div lang="en" style="display:none;color:#000;text-decoration:none;font-size:25px;margin:10px;text-align: center;" >
-        <a class="link" style="color:#999;cursor: pointer;" onclick="pSelectEn('dataviz')" id="datavizSelectorEn"><span>dataviz</span></a> &bull;
-        <a class="link" style="cursor: pointer;" onclick="pSelectEn('web')" id="webSelectorEn"><u><span>web</span></u></a> &bull;
-        <a class="link" style="cursor: pointer;" onclick="pSelectEn('other')" id="otherSelectorEn"><span>others</span></a>
+        <a class="link" style="color:#999;cursor: pointer;" onclick="pSelect-('dataviz')" id="datavizSelectorEn"><span>dataviz</span></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="pSelect('web')" id="webSelectorEn"><u><span>web</span></u></a> &bull;
+        <a class="link" style="cursor: pointer;" onclick="pSelect('other')" id="otherSelectorEn"><span>others</span></a>
       </div>
 
+
+      <!-- WEB PROJECTS-->
       <!-- project: image on the right text on the left -->
       <div class="user-projects" type="web">
         <div class="images-right">
@@ -190,6 +192,25 @@
       </div>
 
 
+      <!-- DATAVIZ PROJECTS -->
+      <!-- project: image on the right text on the left -->
+      <div class="user-projects" type="dataviz" style="display:none;">
+        <div class="images-right">
+          <img alt="tube plotter" src="assets/img/plotter.png" />
+        </div>
+        <div class="contents">
+          <!-- Project Name -->
+          <h3> Vaporwave is Dead! </h3>
+          <!-- Descriptions -->
+          <p lang="pt">Uma visualização de dados analisando vídeos de músicas do gênero Vaporwave no YouTube. Nos grafos é possível observar os difertentes subgêneros do Vaporwave, como o Synthwave e Chillhop, e as relações entre eles. Criada utilizando o YouTube Data Tools, Gephi e TubePlotter.</p>
+          <p lang="en" style="display:none;">A simple data visualizaton of Vaporwave music videos posted on YouTube. On the graphs we can see the different subgenres, like Synthwave and Chillhop, and how they relate to one another. Created using YouTube Data Tools, Gephi and TubePlotter. </p>
+          <!-- links -->
+          <a lang="pt" class="project-link" href="https://danf10.medium.com/an%C3%A1lise-de-redes-um-exame-post-mortem-do-vaporwave-c50660c7daaa">Visitar</a>
+          <a lang="en" style="display:none;"class="project-link" href="https://danf10.medium.com/an%C3%A1lise-de-redes-um-exame-post-mortem-do-vaporwave-c50660c7daaa">Read (in Portuguese)</a>
+        </div>
+      </div>
+
+      <!-- OTHER PROJECTS -->
        <!-- project: image on the right text on the left -->
        <div class="user-projects" type="others" style="display:none;">
          <div class="images-right">
@@ -214,7 +235,7 @@
          </div>
          <div class="contents-right">
            <!-- Project Name -->
-           <h3> CS50W Pizza </h3>
+           <h3> Pinocchio's Pizza </h3>
            <!-- Descriptions -->
            <p lang="pt">Site para a Pinocchio’s Pizza, um restaurante italiano em Cambridge, MA. Conta com recursos de e-commerce como carrinho de compras, e também permite aos administradores fazer atualizações no menu via um painel. Criado com Python e Django.</p>
            <p lang="en" style="display:none;">Website for Pinocchio’s Pizza, an italian restaurant in Cambridge, MA. Has typical e-commerce features like shopping carts, and also allows the admins to make changes to the menu via a panel. Built using Python and Django.</p>

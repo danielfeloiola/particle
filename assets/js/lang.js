@@ -1,3 +1,17 @@
+// ** FADE IN FUNCTION **
+function fadeIn(el, display) {
+    el.style.opacity = 0;
+    el.style.display = display;
+    (function fade() {
+        var val = parseFloat(el.style.opacity);
+        if (!((val += .05) >= 1)) {
+            el.style.opacity = val;
+            requestAnimationFrame(fade);
+        }
+    })();
+};
+
+
 function Lang(language) {
 
     if(language == "en") {
@@ -10,12 +24,15 @@ function Lang(language) {
         // change title
         document.title = 'My portfolio';
 
+        //var webselector = document.querySelector("#webSelectorEn").innerHTML = "<u>web</u>";
+
         // hide en and show pt
         pt.forEach(el=>{
             el.style.display = "none";
         })
         en.forEach(el=>{
-            el.style.display = "";
+            //el.style.display = "";
+            fadeIn(el, "");
         })
 
     }
@@ -30,12 +47,16 @@ function Lang(language) {
         // change title
         document.title = 'Meu portfólio';
 
+        // reset project selector
+        //var webselector = document.querySelector("#webSelector").innerHTML = "<u>web</u>";
+
         // hide en and show pt
         en.forEach(el=>{
             el.style.display = "none";
         })
         pt.forEach(el=>{
-            el.style.display = "";
+            //el.style.display = "";
+            fadeIn(el, "");
         })
 
     }
