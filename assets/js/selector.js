@@ -80,7 +80,7 @@ function pSelect(projects) {
         // change the selector in en
         var datavizselector = document.querySelector("#datavizSelectorEn").innerHTML = "<u>dataviz</u>";
         var webselector = document.querySelector("#webSelectorEn").innerHTML = "web";
-        var otherselector = document.querySelector("#otherSelectorEn").innerHTML = "outros";
+        var otherselector = document.querySelector("#otherSelectorEn").innerHTML = "others";
 
         // hide en and show pt
         others.forEach(el=>{
